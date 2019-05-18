@@ -1,2 +1,2 @@
-# LogTest
+# LoggerTest
 something about java

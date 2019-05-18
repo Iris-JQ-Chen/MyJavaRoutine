@@ -6,14 +6,14 @@ import java.util.logging.FileHandler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class LogTest {
+public class LoggerTest {
 
-    private static Logger logger = Logger.getLogger("LogTest");
+    private static Logger logger = Logger.getLogger("LoggerTest");
     static{
         logger.setLevel(Level.ALL);
         FileHandler fileHandler = null;
         try {
-            fileHandler = new FileHandler("LogTest.log");
+            fileHandler = new FileHandler("LoggerTest.log");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -24,7 +24,7 @@ public class LogTest {
     }
 
     public static void main (String args[]){
-        LogTest logTest = new LogTest();
+        LoggerTest logTest = new LoggerTest();
         logTest.getRandom();
     }
 
